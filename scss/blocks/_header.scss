@@ -1,0 +1,10 @@
+@use "../utils/_mixins";
+
+.header__wrapper {
+    @include mixins.wrapper;
+    display: flex;
+    min-height: 50px;
+    padding: 72px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
