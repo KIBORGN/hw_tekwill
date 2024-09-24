@@ -1,5 +1,6 @@
 @use "../utils/_mixins";
 
+
 .header__wrapper {
     @include mixins.wrapper;
     display: flex;
@@ -8,3 +9,4 @@
     justify-content: space-between;
     align-items: center;
 }
+
