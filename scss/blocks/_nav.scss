@@ -24,3 +24,11 @@
         font-weight: 700;
     }
 }
+
+.functions__link {
+    padding: 12px 50px;
+    color: variables.$light-text;
+
+    border: 1px solid variables.$light-text;
+    border-radius: 24px;
+}
