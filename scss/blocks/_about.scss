@@ -1,0 +1,95 @@
+@use "../utils/_mixins";
+@use "../utils/_variables";
+
+.about {
+    margin-top: 150px
+}
+
+.about__wrapper {
+    @include mixins.wrapper;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about__heading {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+}
+
+.about__subtitle {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 1.4;
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+.about__mate {
+    display: flex;
+    margin-top: 38px;
+    padding: 0 100px;
+}
+
+.mate__img {
+    border-radius: 24px;
+}
+
+.mate__text {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-left: 60px;
+    margin-top: 25px;
+}
+
+.mate__links--wrapper {
+    margin-top: 25px;
+}
+
+.link {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: variables.$dark-bg;
+
+    margin-top: 25px;
+    margin-left: 60px;
+    padding: 12px 50px;
+
+    border-radius: 24px;
+    background-color: variables.$light-text;
+    box-shadow: 0 4px 8px 0 variables.$shadow;
+
+    &--dark {
+        position: relative;
+
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        color: variables.$light-text;
+        
+        margin-left: 25px;
+        padding: 12px 50px 12px 85px;
+
+        border-radius: 24px;
+        background-color: variables.$dark-bg;
+        box-shadow: 0 0 0 0;
+        border: 1px solid variables.$light-text;
+    }
+}
+
+.link__image {
+    position: absolute;
+    left: 25%
+}
