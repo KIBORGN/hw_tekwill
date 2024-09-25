@@ -1,0 +1,52 @@
+@use "../utils/_mixins";
+@use "../utils/_variables";
+
+.footer {
+    background-color: variables.$footer
+}
+
+.footer__wrapper {
+    @include mixins.wrapper;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 100px;
+}
+
+.footer__nav {
+    display: flex;
+    margin-top: 132px;
+}
+
+.logo__img {
+    background-color: variables.$dark-bg;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25px;
+}
+
+.copyrigth__socials {
+    display: flex;
+    padding: 20px 100px;
+    border-bottom: 1px solid variables.$light-text;
+}
+
+.copyrigth {
+    margin-top: 76px;
+}
+
+.socials__item {
+    margin-left: 40px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.copyrigth__text {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 33px;
+}
