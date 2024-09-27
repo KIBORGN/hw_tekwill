@@ -50,8 +50,51 @@
 
 .home__images {
     margin-top: 95px;
+    position: relative;
 }
 
 .images__img {
     border-radius: 50px;
+}
+
+.images__port {
+    position: absolute;
+    bottom: -100px;
+    right: -250px;
+    background-color: variables.$dark-bg;
+}
+
+.images__great {
+    position: absolute;
+    top: 24px;
+    left: -90px;
+    background-color: variables.$dark-bg;
+}
+
+.great {
+    padding: 16px 20px;
+    border-radius: 16px;
+}
+
+.great__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.great__heading {
+    margin-left: 5px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.25;
+    opacity: 0.5;
+}
+
+.great__text {
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-top: 5px;
 }
